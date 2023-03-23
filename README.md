@@ -24,6 +24,7 @@ This is a basic Arduino robot project. components used are Arduino UNO, connecti
 The above code sets the LM1 and RM1 pins to high and the LM2 and RM2 pins to low. This causes the robot's left and right wheels to move forward, driving it ahead in a straight path.
 
 once the variable fire became true the code will execute put off fire function. the code used for doing that is given below
+
      while (fire == true)
      {
      put_off_fire();
