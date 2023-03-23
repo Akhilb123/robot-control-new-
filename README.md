@@ -11,3 +11,4 @@ This is a basic Arduino robot project. components used are Arduino UNO, connecti
      digitalWrite(RM1, HIGH);
      digitalWrite(RM2, HIGH);
      }
+#### if there is any fire we can ask the robot to move in that direction by rotating the respective motor.
