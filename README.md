@@ -32,3 +32,26 @@ once the variable fire became true the code will execute put off fire function. 
 Inside the put_off_fire() we just have to stop the robot by making all the pins high.
 
 #### After this we can turn on the pump.
+     void put_off_fire()
+       {
+
+       delay (600);               pause the program execution for 600 milliseconds
+
+      digitalWrite(LM1, HIGH);    Setting the LM1 digital output pin to a high value, which will stop the left motor from moving.
+      digitalWrite(LM2, HIGH);    Setting the LM2 digital output pin to a high value, which will stop the left motor from moving.
+      digitalWrite(RM1, HIGH);    Setting the RM1 digital output pin to a high value, which will stop the right motor from moving
+      digitalWrite(RM2, HIGH);    Setting the RM2 digital output pin to a high value, which will stop the right motor from moving.
+      digitalWrite(pump, HIGH);    //The pump will operate if the digital output pin for the pump is set to a high value
+      delay(600); 
+       for (pos = 50; pos <= 130; pos += 1) {      Starting a for loop that will run from pos = 50 to pos = 130 in increments of 1.
+        myservo.write(pos);                         Moveing the servo to the position specified by the pos variable.
+       delay(20); 
+           }              end of for loop
+       for (pos = 130; pos >= 50; pos -= 1) {          Starting a for loop that will run from pos = 130 to pos = 50 in decrements of 1.
+       myservo.write(pos);
+      delay(20); 
+      }
+       digitalWrite(pump,LOW); setting the pump digital output pin to a low value, which will turn off the pump.
+         myservo.write(90);
+       fire=false;     the fire boolean variable is set to false which indicates the fire has been extinguished
+         }
