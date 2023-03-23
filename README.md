@@ -29,3 +29,6 @@ once the variable fire became true the code will execute put off fire function. 
      {
      put_off_fire();
       }
+Inside the put_off_fire() we just have to stop the robot by making all the pins high.
+
+#### After this we can turn on the pump.
