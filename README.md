@@ -55,3 +55,5 @@ Inside the put_off_fire() we just have to stop the robot by making all the pins 
          myservo.write(90);
        fire=false;     the fire boolean variable is set to false which indicates the fire has been extinguished
          }
+   #### link for datasheet of L293D motor:
+       https://www.bing.com/aclk?        ld=e8b_X_NzeVcVyGTSqRXtA5rDVUCUw0LDm_SIrFU5F_RohXOEPkTJrcpU1AbolMnByKBMUnLz0RXXVcT1bBhlEZoEdk312SptefsObQmO6cSQWmR_zUi4ayaN7GV51UMcx8ileUe6Ns8MTIcEAVTLPUcAd3OsWaPPJK00bmoq0kRSwgtP-zE-RSd6jZOQ6iWOHdnnpNAA&u=aHR0cHMlM2ElMmYlMmZvY3RvcGFydC5jb20lMmZkYXRhc2hlZXQlMmZsMjkzZC1zdG1pY3JvZWxlY3Ryb25pY3MtNDY4MjY3JTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkYl9jcGNfaW50bF9zZWFyY2hfZHNhX2VuZ2xpc2hfZW5fdXNkX2RhdGFzaGVldHMlMjZ1dG1fdGVybSUzZGRhdGFzaGVldCUyNnV0bV9jb250ZW50JTNkSW50bCUyNTIwRGF0YXNoZWV0JTI1MjBEU0E&rlid=2bc0dad205521d34825bbece9700f2e2&ntb=1
