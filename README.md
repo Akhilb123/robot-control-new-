@@ -12,3 +12,12 @@ This is a basic Arduino robot project. components used are Arduino UNO, connecti
      digitalWrite(RM2, HIGH);
      }
 #### if there is any fire we can ask the robot to move in that direction by rotating the respective motor.
+    else if (digitalRead(Frontsidesensor) ==0) //If Fire is straight ahead
+    {
+      //Move the robot forward
+    digitalWrite(LM1, HIGH);  LM1 is leftside motor
+     digitalWrite(LM2, LOW);   LM2 is leftside motor
+    digitalWrite(RM1, HIGH);  RM1 is right side motor 
+    digitalWrite(RM2, LOW);   RM2 is right side motor
+    fire = true;
+     }
